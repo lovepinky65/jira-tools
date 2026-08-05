@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head><meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://*.atlassian.net https://*.atl-paas.net https://secure.gravatar.com; font-src 'self'; connect-src https://api.atlassian.com; base-uri 'self'; form-action 'self'; manifest-src 'self'">
+    <meta charset="utf-8"/>
+    <title>Jira Tools</title>
+    <base href="/jira-tools/"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <!--
+      注意：正式版的 Content-Security-Policy 由 scripts/build-pages.mjs 在打包後
+      注入，這裡刻意不放 —— 因為 dev server 的 HMR 需要 ws://localhost 連線，
+      寫死在這裡會逼我們把 localhost 也加進正式版的 connect-src。
+      政策內容與取捨見 docs/deployment-options.md。
+    -->
+    <link rel="icon" type="image/svg+xml" href="tiger.svg"/>
+    <link rel="alternate icon" type="image/x-icon" href="favicon.ico"/>
+  <link rel="stylesheet" href="styles-24HN6UEI.css"></head>
+  <body>
+    <app-root></app-root>
+  <link rel="modulepreload" href="chunk-7YPCCW2P.js"><link rel="modulepreload" href="chunk-FFHXFM7F.js"><link rel="modulepreload" href="chunk-7UCT5C7J.js"><link rel="modulepreload" href="chunk-WJPNDLUW.js"><script src="polyfills-5CFQRCPP.js" type="module"></script><script src="main-XVAEZXPZ.js" type="module"></script></body>
+</html>
